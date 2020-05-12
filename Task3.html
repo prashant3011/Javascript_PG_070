@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+    Name: <input type="text" id="name" >
+
+    <button onclick="getname()">click here to display your name</button>
+    
+    <script>
+    function getname() {
+        var n = document.getElementById("name").value;
+         document.getElementById("a").innerHTML=n;
+		 document.getElementById("b").innerHTML=n;
+		 document.getElementById("c").innerHTML=n;
+		 document.getElementById("d").innerHTML=n;
+		 document.getElementById("e").innerHTML=n;
+		 
+        
+    }
+    </script>
+            
+<h1 id="a" style=color:black></h1>
+<h2 id="b" style=color:yellow></h2>
+<h3 id="c" style=color:green></h3>
+<h4 id="d" style=color:red></h4>
+<h5 id="e" style=color:blue></h5>
+</body>
+</html>
