@@ -1,14 +1,29 @@
 
 
-<head>
+<html>
+
+<body>
 <h1>Higest number function</h1>
-<script src="highest.js">
-var largest=highest(a,b,c);
-document.getElementById("dd").innerHTML="Highest no is"+largest;
+<p id="fun"></p>
+<script>
+function highest(a,b,c)
+{
+if(a>b && a>c)
+return a;
+
+else if(b>a && b>c)
+return b;
+
+else 
+return c;
+
+}
+var largest=highest(10,20,30);
+document.getElementById("fun").innerHTML = "Highest no is "+largest;
+
 </script>
 
-</head>
-<body>
-<p id="demo"></p>
-
 </body>
+
+
+</html>
