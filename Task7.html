@@ -1,0 +1,21 @@
+<html>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<script>
+var arr = [20,30,40,7,5] ;
+document.getElementById('demo').innerHTML ="The Given array elements are "+"<br>"+arr;
+
+function ascorder()
+{
+
+arr.sort(function(a,b){return a-b});
+document.getElementById("demo1").innerHTML ="Array Elements after sorting are "+"<br>"+arr;
+}
+
+</script>
+
+
+<button onclick="ascorder()">Click Here for Asc Sorting</button>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<head>
+<h1>Higest number function</h1>
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<script>
+
+
+var arr = [10, 20, 30, 54, 9, 15, 88, 33, 5, 99];
+document.getElementById("demo").innerHTML="<b> The given array is"+"<br>"+arr;
+function maxno(arr)
+{
+var len = arr.length;
+var max = arr[0];
+while(len--)
+{
+if(max < arr[len] )
+{
+max = arr[len];
+}
+
+}
+return max;
+}
+var largest = maxno(arr);
+document.getElementById("demo1").innerHTML="<b> The highest value is"+ " "+largest+"."+"</b>";
+
+
+</script>
+
+
+
+</body>

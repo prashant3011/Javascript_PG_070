@@ -1,0 +1,26 @@
+<html>
+<body>
+<p id="demo"></p>
+
+<script>
+var arr = ["Rohitghja"] ;
+document.getElementById('demo').innerHTML ="The Given String is "+"<br>"+arr;
+
+function search()
+{
+
+var pos=arr.indexOf("@");
+if(pos == -1)
+{
+document.getElementById("demo").innerHTML ="There is no @ in "+"<br>"+arr;
+}
+else
+document.getElementById("demo").innerHTML ="There is @ in "+"<br>"+arr;
+}
+
+</script>
+
+
+<button onclick="search()">Click Here for Search</button>
+</body>
+</html>

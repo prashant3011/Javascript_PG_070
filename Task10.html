@@ -1,0 +1,32 @@
+<html>
+<body>
+<h1>Mobile Number </h1>
+<p id="demo"></p>
+
+<script>
+var arr ="999888770" ;
+document.getElementById('demo').innerHTML ="The Given Number is "+"<br>"+arr;
+
+function check()
+{
+
+var len = arr.length;
+if(len == 10)
+{
+document.getElementById("demo").innerHTML ="There are exactly 10 nos in "+"<br>"+arr;
+}
+else if(len > 10 )
+document.getElementById("demo").innerHTML ="There are more than 10 no in "+"<br>"+arr;
+
+
+else
+document.getElementById("demo").innerHTML ="There are less than 10 no in "+"<br>"+arr;
+
+}
+
+</script>
+
+
+<button onclick="check()">Click Here</button>
+</body>
+</html>
