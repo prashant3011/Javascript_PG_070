@@ -1,0 +1,72 @@
+<body>
+<script>
+
+class Employee{
+constructor(Id,Name,Salary)
+{
+this.member_Id = Id;
+this.name = Name;
+this.salary = Salary;
+this.net_salary = null;
+
+};
+
+
+
+set netsal(sal)   //This method is optional
+{
+this.net_salary = sal;
+}
+
+set EmpID(ID)
+{
+this.member_Id = ID;
+}
+
+
+set Empsal(sal)
+{
+this.salary = sal;
+}
+
+
+set Empname(name)
+{
+this.name = name;
+}
+
+
+calNetSal()
+{
+let TDS = 0.1;
+this.net_salary = this.salary - (TDS*this.salary); 
+
+}
+
+get EmpInfo()
+{
+for(let punk in this){
+
+if(typeof this[punk]!= 'function')
+document.write(punk+" :"+" "+this[punk]+"<br>" )
+
+}
+
+document.write("<br>"+"<br>"+"<br>");
+}
+
+
+}
+
+var Emp1 = new Employee(1,"Suarj",10000);
+var Emp2 = new Employee(2,"Lalit",20000);
+
+Emp1.calNetSal();
+Emp1.EmpInfo;
+Emp2.calNetSal();
+Emp2.EmpInfo;
+
+//Empl.setsal(Nsal);
+//Emp1.Empinfo;
+</script>
+</body>

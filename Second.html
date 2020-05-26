@@ -1,0 +1,94 @@
+<body>
+<script>
+
+class Student{
+constructor()
+{
+this.RollNo;
+this.name;
+this.marks1;
+this.marks2;
+this.marks3;
+this.total;
+this.percentage;
+
+};
+
+
+
+set Roll_no(no)   
+{
+this.RollNo = no;
+}
+
+set stuname(name)    
+{
+this.name = name;
+}
+
+
+set stumarks1(m1)  {
+
+this.marks1 = m1;
+}
+
+set stumarks2(m2)  {
+
+this.marks2 = m2;
+}
+
+set stumarks3(m3)  
+{
+this.marks3 = m3;
+}
+
+calculate_Tot_per()
+{
+this.total = this.marks1+this.marks2+this.marks3;
+
+this.percentage = (this.total/300) *100;
+
+}
+
+get StuInfo()
+{
+document.write("Student Progress Report is :"+"<br>");
+
+for(let punk in this){
+
+if(typeof this[punk]!= 'function')
+document.write(punk+" :"+" "+this[punk]+"<br>" )
+
+}
+
+document.write("<br>"+"<br>"+"<br>");
+}
+
+
+
+
+
+}
+
+var Stu1 = new Student();
+var Stu2 = new Student();
+
+
+Stu1.Roll_no = 70;
+Stu1.stuname ='Pankaj';
+Stu1.stumarks1 = 100;
+Stu1.stumarks2 = 99;
+Stu1.stumarks3 = 89;
+Stu1.calculate_Tot_per();
+Stu1.StuInfo;
+
+Stu2.Roll_no = 10;
+Stu2.stuname ='Amarendra';
+Stu2.stumarks1 = 35;
+Stu2.stumarks2 = 36;
+Stu2.stumarks3 = 34;
+Stu2.calculate_Tot_per();
+Stu2.StuInfo;
+
+</script>
+</body>
