@@ -1,2 +1,2 @@
 # Javascript_PG_070
-Java Scripting Day wise Task
+Java Scripting Day9 Assignment
